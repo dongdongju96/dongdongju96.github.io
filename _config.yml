@@ -15,11 +15,11 @@
 # in the templates via {{ site.myvariable }}.
 # theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
-skin: "/assets/css/skins/default.css"
+skin: "/assets/css/skins/default.scss"
 locale: en-US
 title: "Dawn's blog"
 description: "Dawn's private blog"
-baseurl: # the subpath of your site, e.g. "/blog"
+baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://dongdongju96.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
