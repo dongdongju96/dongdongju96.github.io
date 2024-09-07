@@ -1,0 +1,47 @@
+<p><a href="http://www.mathjax.org/">MathJax</a> is a simple, yet powerful, way of
+including Tex/LaTex/MathML based mathematics in HTML webpages.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>To enable MathJax support configure your <code class="language-plaintext highlighter-rouge">_config.xml</code> to:</p>
+<ul>
+  <li>Set <code class="language-plaintext highlighter-rouge">kramdown</code> as the Markdown parser.</li>
+  <li>Enable MathJax.</li>
+</ul>
+
+<p>The version of MathJax enabled is v3.</p>
+
+<p>An example setting for <code class="language-plaintext highlighter-rouge">_config.xml</code> is shown below:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">markdown</span><span class="pi">:</span> <span class="s">kramdown</span>
+<span class="na">mathjax</span><span class="pi">:</span>
+  <span class="na">enable</span><span class="pi">:</span> <span class="kc">true</span>
+  <span class="na">combo</span><span class="pi">:</span> <span class="s2">"</span><span class="s">tex-svg"</span>
+  <span class="na">tags</span><span class="pi">:</span> <span class="s2">"</span><span class="s">ams"</span>
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">$$</code> as delimiters to enable TeX math mode, both for inline and display (i.e. block) rendering.</p>
+
+<p>Here is an example equation that is inline: \(a^2 + b^2 = c^2\), where
+\(a\), \(b\), and \(c\) are variables.</p>
+
+<p>Here is a block rendering with no default equation numbering:</p>
+
+\[\frac{1}{n^{2}}\]
+
+<p>And, below is a block using the <code class="language-plaintext highlighter-rouge">\begin{equation}</code> and
+<code class="language-plaintext highlighter-rouge">\end{equation}</code> LaTeX delimiters.  This equation will be numbered in
+the <code class="language-plaintext highlighter-rouge">ams</code> and <code class="language-plaintext highlighter-rouge">all</code> setting for <code class="language-plaintext highlighter-rouge">mathjax.tags</code>.</p>
+
+\[\begin{equation}
+\mathbf{X}_{n,p} = \mathbf{A}_{n,k} \mathbf{B}_{k,p}    \label{test}
+\end{equation}\]
+
+<p>If equation numbering is turned on, we should see an equation number here: \(\eqref{test}\).</p>
+
+<p>An example using the <code class="language-plaintext highlighter-rouge">{align}</code> LaTeX environment is below.  The first equation has a <code class="language-plaintext highlighter-rouge">\notag</code> directive.</p>
+
+\[\begin{align}
+(x + y) (x - y) &amp;= x^2 + xy - xy + y^2   \notag \\
+    &amp;= x^2 - y^2
+\end{align}\]
