@@ -233,13 +233,13 @@
 <loc>http://localhost:4000/categories/edge-case/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/example/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/tags/markup/</loc>
