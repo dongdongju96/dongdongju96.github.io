@@ -21,7 +21,7 @@ title: "Dawn's blog"
 description: ""
 baseurl: "" # the subpath of your site, e.g. "/blog"
 url: "https://dongdongju96.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: # path of site logo, e.g. "/images/logo.png"
+logo: "/images/11zon_cropped.png" # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: # reading time estimates, e.g. true
 words_per_minute: # 200
@@ -90,10 +90,10 @@ defaults:
       share: true
 
 # Site Author
-author:
-  name:
-  picture:
-  email:
+author: "Dawn"
+  name: "Dawn"
+  picture: "/images/11zon_cropped.png"
+  email: "candawn15@gmail.com"
   twitter:
   links:
     - title:
