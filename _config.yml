@@ -90,10 +90,10 @@ defaults:
       share: true
 
 # Site Author
-author: "Dawn"
-  name: "Dawn"
-  picture: "/images/11zon_cropped.png"
-  email: "candawn15@gmail.com"
+author:
+  name: 
+  picture:
+  email:
   twitter:
   links:
     - title:
