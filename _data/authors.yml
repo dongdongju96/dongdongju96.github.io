@@ -1,16 +1,16 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
-  picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+Dawn Dongju Lee:
+  name: Dawn Dongju Lee
+  picture: /images/11zon_cropped.png
+  LinkedIn: "@Dongju Lee"
   links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/dongju-lee-4465ab25b/
+      icon: fab fa-linkedin-square
 
-Cornelius Fiddlebone:
-  name: Cornelius Fiddlebone
-  picture: /images/bio-photo.jpg
-  twitter: corneliusfiddlebone
+# Cornelius Fiddlebone:
+#   name: Cornelius Fiddlebone
+#   picture: /images/bio-photo.jpg
+#   twitter: corneliusfiddlebone
