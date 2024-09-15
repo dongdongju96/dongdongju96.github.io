@@ -91,17 +91,27 @@ defaults:
 
 # Site Author
 author:
-  name: 
-  picture:
-  email:
+  name: Dawn Dongju Lee 
+  picture: /images/11zon_cropped.png
+  email: candawn15@gmail.com
   twitter:
   links:
-    - title:
-      url:
-      icon:
+    - title: Github
+      url: https://github.com/dongdongju96
+      icon: fab fa-github-square
+  links:
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/dongju-lee-4465ab25b/
+      icon: fab fa-linkedin-square
 
 # Footer Links
 footer_links:
+  - title: Github
+    url: https://github.com/dongdongju96
+    icon: fab fa-github-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/dongju-lee-4465ab25b/
+    icon: fab fa-linkedin-square    
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
