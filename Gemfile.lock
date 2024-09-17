@@ -125,6 +125,7 @@ PLATFORMS
   x86_64-darwin
 
 DEPENDENCIES
+  jekyll-sitemap
   jekyll-theme-so-simple
 
 BUNDLED WITH
