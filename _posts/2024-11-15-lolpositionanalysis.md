@@ -162,6 +162,6 @@ before_15_df = match_timeline_api_df.query('timestamp <= 900000')
 
 
 
-자세한 코드는 [여기](https://core.today/story/g0U092Bi#)에서 볼 수 있습니다.
+자세한 코드는 [여기](https://github.com/dongdongju96/data-story/blob/main/league_of_legends/where_is_my_lane.ipynb)에서 볼 수 있습니다.
 
 
