@@ -16,7 +16,7 @@ RIOT에서는 개인에게 유저들의 정보를 제공해줍니다.
   
 # 데이터 준비
   
-[RIOT_API](https://developer.riotgames.com) 발급받기
+[RIOT_API](https://github.com/dongdongju96/data-story/blob/main/league_of_legends/riot_api_useage_1.ipynb) 발급받기
 
 해당 주소에서 자신의 LOL 아이디로 로그인해서 API를 발급 받을 수 있습니다.
   

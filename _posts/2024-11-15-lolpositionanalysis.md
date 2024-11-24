@@ -31,7 +31,7 @@ tags: [riot, riot api]     # TAG names should always be lowercase
 
 ## 📁 데이터 불러오기
 
-~~[riot api 데이터 저장하는 방법](https://core.today/story/NQ7O33x5)~~
+[riot api 데이터 저장하는 방법](https://github.com/dongdongju96/data-story/blob/main/league_of_legends/riot_api_data_save.ipynb)
 
 riot api를 사용해서 미리 저장해 놓은 데이터를 불러오겠습니다.
 
