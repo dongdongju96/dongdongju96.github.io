@@ -3,7 +3,7 @@ title: NVIDIA Jetson Ultralytics YOLO 설정
 description: Jetson Ultralytics YOLO 환경 설정 및 설치
 date: 2025-10-31 15:40:00 -0400
 categories: [NVIDIA]
-tags: [nvidia, jetson, YOLO, Ultralytics]     # TAG names should always be lowercase
+tags: [nvidia, jetson, yolo, ultralytics]     # TAG names should always be lowercase
 ---
 
 # Ultralytics 설치
