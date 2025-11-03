@@ -1,7 +1,7 @@
 ---
 title: NVIDIA Jetson issue 및 해결
 description: Jetson orin nano super에서 발생한 웹 브라우저 에러와 절전모드 시 발생한 에러 해결
-date: 2025-11-03 12:22:00 -0400
+date: 2025-11-03 12:22:00 +0900
 categories: [NVIDIA]
 tags: [nvidia, jetson, issue]     # TAG names should always be lowercase
 ---
