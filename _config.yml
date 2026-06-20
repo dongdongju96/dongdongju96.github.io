@@ -109,7 +109,7 @@ toc: true
 
 comments:
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: # [disqus | utterances | giscus]
+  provider: giscus
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -119,15 +119,15 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
-    mapping: # optional, default to 'pathname'
-    strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
-    reactions_enabled: # optional, default to the value of `1`
+    repo: dongdongju96/dongdongju96.github.io # [필수] 본인의 GitHub username/repository
+    repo_id: # [필수] giscus.app에서 발급받은 repo ID 입력 (예: R_kgDO...)
+    category: Announcements # [필수] Discussion 카테고리 이름
+    category_id: # [필수] giscus.app에서 발급받은 category ID 입력 (예: DIC_...)
+    mapping: pathname # [선택] 포스트 매핑 기준 (기본값: pathname)
+    strict: '0' # [선택] 엄격한 매핑 여부 (기본값: '0')
+    input_position: bottom # [선택] 댓글 입력창 위치 (기본값: bottom)
+    lang: ko # [선택] 언어 설정
+    reactions_enabled: '1' # [선택] 반응 이모지 활성화 (기본값: '1')
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:

@@ -1,0 +1,101 @@
+/*
+  Appending custom SCSS variables will override the default ones in `_sass/addon/variables.scss`
+*/
+
+// =============================================================================
+// 1. 가독성 & 타이포그래피 (Pretendard)
+// =============================================================================
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+$font-family-base: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+$font-family-heading: "Pretendard", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+
+// =============================================================================
+// 2. 브랜드 컬러 스키마 (Tableau Teal & PyTorch Orange)
+// =============================================================================
+html {
+  // 라이트 모드 (Tableau Teal 중심 + PyTorch Orange 액센트)
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      --link-color: #007A87; // Tableau Teal
+      --link-underline-color: rgba(0, 122, 135, 0.2);
+      --toc-highlight: #007A87;
+      --sidebar-hover-bg: rgba(0, 122, 135, 0.08);
+      --sidebar-active-color: #007a87;
+      --checkbox-checked-color: #EE4C2C; // PyTorch Orange accent
+      --btn-share-hover-color: #007A87;
+    }
+
+    &[data-mode='dark'] {
+      --link-color: #F05735; // PyTorch Orange
+      --link-underline-color: rgba(240, 87, 53, 0.2);
+      --toc-highlight: #F05735;
+      --sidebar-hover-bg: rgba(240, 87, 53, 0.08);
+      --sidebar-active-color: #F05735;
+      --checkbox-checked-color: #00B4D8; // Tableau Cyan accent
+      --btn-share-hover-color: #F05735;
+    }
+  }
+
+  // 다크 모드 (PyTorch Orange 중심 + Tableau Cyan 액센트)
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      --link-color: #F05735; // PyTorch Orange
+      --link-underline-color: rgba(240, 87, 53, 0.2);
+      --toc-highlight: #F05735;
+      --sidebar-hover-bg: rgba(240, 87, 53, 0.08);
+      --sidebar-active-color: #F05735;
+      --checkbox-checked-color: #00B4D8; // Tableau Cyan accent
+      --btn-share-hover-color: #F05735;
+    }
+
+    &[data-mode='light'] {
+      --link-color: #007A87; // Tableau Teal
+      --link-underline-color: rgba(0, 122, 135, 0.2);
+      --toc-highlight: #007A87;
+      --sidebar-hover-bg: rgba(0, 122, 135, 0.08);
+      --sidebar-active-color: #007a87;
+      --checkbox-checked-color: #EE4C2C; // PyTorch Orange accent
+      --btn-share-hover-color: #007A87;
+    }
+  }
+}
+
+// =============================================================================
+// 3. 사이드바 아바타 마이크로 인터랙션
+// =============================================================================
+#avatar {
+  display: block;
+  width: 112px;
+  height: 112px;
+  overflow: hidden;
+  border: 3px solid var(--avatar-border-color);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
+
+  img {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18), 0 4px 8px rgba(0, 0, 0, 0.12);
+
+    img {
+      transform: scale(1.08);
+    }
+  }
+}
+
+// =============================================================================
+// 4. 프로젝트 및 커스텀 카드 애니메이션 (About)
+// =============================================================================
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+  }
+}
