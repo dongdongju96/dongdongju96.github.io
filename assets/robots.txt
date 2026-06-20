@@ -1,3 +1,48 @@
+---
+permalink: /robots.txt
+layout: null
+---
+# Default search engine rules
 User-agent: *
 Allow: /
+Disallow: /norobots/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/lib/
+
+# AI Search and LLM crawler rules (GEO/AEO friendly)
+# Allow AI engines to crawl and index blog posts for citations and summaries.
+User-agent: GPTBot
+Allow: /
+Disallow: /norobots/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /norobots/
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /norobots/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /norobots/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /norobots/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /norobots/
+
+User-agent: cohere-ai
+Allow: /
+Disallow: /norobots/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /norobots/
+
+# Sitemap path
 Sitemap: https://dongdongju96.github.io/sitemap.xml

@@ -28,3 +28,7 @@ assets/js/dist
 
 # google verification
 google/
+
+# Antigravity agent configuration
+.agents/
+
